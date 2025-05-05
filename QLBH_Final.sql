@@ -1,11 +1,11 @@
-﻿-- Tạo Database
+-- Tạo Database
 CREATE DATABASE QLBH;
 GO
 
 USE QLBH;
 GO
 
--- Bảng Customers
+
 CREATE TABLE customers (
     customer_id VARCHAR(50)  PRIMARY KEY,
     first_name VARCHAR(255),
@@ -17,9 +17,7 @@ CREATE TABLE customers (
     avatar_path VARCHAR(255)
 )
 
-GO
 
--- Bảng Users
 CREATE TABLE users (
     username VARCHAR(50) PRIMARY KEY,
     password VARCHAR(255),
@@ -27,10 +25,9 @@ CREATE TABLE users (
     avatar_path VARCHAR(255),
     created_at SMALLDATETIME DEFAULT GETDATE()
 )
-GO
-drop table orders 
 
--- Bảng Products
+
+
 CREATE TABLE products (
     product_id VARCHAR(50)  PRIMARY KEY,
     p_name VARCHAR(255) ,
@@ -45,7 +42,7 @@ CREATE TABLE products (
 )
 
 
-GO
+
 
 
 CREATE TABLE orders (
