@@ -61,15 +61,3 @@ CREATE TABLE orders (
 
 
 
-INSERT INTO customers (customer_id, first_name, last_name, customer_username, customer_password, phone, email, avatar_path)
-VALUES 
-(1, 'John', 'Doe','jd', 'password123', '1234567890', 'john.doe@example.com', '/images/avatars/john_doe.jpg')
-
-
-INSERT INTO users (username, password, role, avatar_path, created_at)
-VALUES 
-('admin', '123', 'staff', 'C:\Users\VINH QUI\OneDrive\Pictures\logo-truong-dai-hoc-ton-duc-thang.png', GETDATE())
-
-INSERT INTO products (product_id, p_name, brand, color, type, price, stock_quantity, image_path)
-VALUES 
-    ('P001', 'Áo Bóng Đá', 'Nike', 'Red', 'Football', 29.99, 50, 'C:\Users\VINH QUI\OneDrive\Pictures\Anime wallpaper.jpg')
